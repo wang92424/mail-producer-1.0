@@ -9,7 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bhz.mail.entity.MailSend;
 import com.bhz.mail.service.MailSendService;
-
+/***
+ * 
+ * <p>Title:ProducerController</p>
+ * <p>Description: 控制层</p>
+ * <p>Company: </p>
+ * @author MrWang
+ * @date 2018年3月15日 下午11:04:26
+ */
 @RestController
 public class ProducerController {
 

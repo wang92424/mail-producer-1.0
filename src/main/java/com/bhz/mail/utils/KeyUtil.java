@@ -9,8 +9,8 @@ import com.fasterxml.uuid.impl.TimeBasedGenerator;
  * <B>模块名称：</B>通用平台-公共服务<BR>
  * <B>中文类名：</B>KeyUtils<BR>
  * <B>概要说明：</B>主键生成策略-工具类<BR>
- * @author baihezhuo
- * @since 2017年2月21日 下午1:55:42
+ * @author MrWang
+ * @since 2018年3月8日 下午1:55:42
  */
 public class KeyUtil {
 

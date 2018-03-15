@@ -11,7 +11,13 @@ import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
-
+/****
+ * <p>Title:MybatisConfiguration</p>
+ * <p>Description: 设置数据源</p>
+ * <p>Company: </p>
+ * @author MrWang
+ * @date 2018年3月15日 下午11:01:10
+ */
 @Configuration
 @AutoConfigureAfter({DataSourceConfiguration.class})
 public class MybatisConfiguration extends MybatisAutoConfiguration {

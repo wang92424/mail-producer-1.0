@@ -16,8 +16,8 @@ import com.github.pagehelper.PageHelper;
  * <B>模块名称：</B><BR>
  * <B>中文类名：</B><BR>
  * <B>概要说明：</B><BR>
- * @author baihezhuo
- * @since 2017年5月7日 下午11:02:17
+ * @author MrWang
+ * @since 2018年3月8日 下午11:02:17
  */
 @Service
 public class MstDictService {

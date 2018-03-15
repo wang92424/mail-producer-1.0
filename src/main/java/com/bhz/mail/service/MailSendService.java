@@ -33,6 +33,12 @@ public class MailSendService {
 	public void sendRedis(MailSend mailSend) {
 		// TODO Auto-generated method stub
 		ListOperations<String, String> listOperations = redisTemplate.opsForList();
+		Long priority = mailSend.getSendPriority();
+		Long ret = 0L;
+		Long size = 0L;
+		if(priority<4L) {
+			
+		}
 		
 	}
 	

@@ -1,7 +1,14 @@
 package com.bhz.mail.entity;
 
 import java.util.Date;
-
+/****
+ * 
+ * <p>Title:MailSend</p>
+ * <p>Description: 邮件发送实体类</p>
+ * <p>Company: </p>
+ * @author MrWang
+ * @date 2018年3月15日 下午10:56:48
+ */
 public class MailSend {
     private String sendId;
     

@@ -12,8 +12,6 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
  * <B>模块名称：</B>通用平台-公共服务<BR>
  * <B>中文类名：</B>通用平台-公共服务-FastJsonConvert<BR>
  * <B>概要说明：</B><BR>
- * @author bhz
- * @since 2016年10月10日 上午11:01:52
  */
 public class FastJsonConvertUtil {
 

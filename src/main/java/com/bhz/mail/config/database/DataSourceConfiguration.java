@@ -18,7 +18,14 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
-
+/****
+ * 
+ * <p>Title:DataSourceConfiguration</p>
+ * <p>Description:创建数据源 </p>
+ * <p>Company: </p>
+ * @author MrWang
+ * @date 2018年3月15日 下午11:02:17
+ */
 @Configuration
 @EnableTransactionManagement
 public class DataSourceConfiguration {

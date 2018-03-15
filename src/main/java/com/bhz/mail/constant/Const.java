@@ -1,5 +1,12 @@
 package com.bhz.mail.constant;
-
+/****
+ * 
+ * <p>Title:Const</p>
+ * <p>Description: 静态常量</p>
+ * <p>Company: </p>
+ * @author MrWang
+ * @date 2018年3月15日 下午11:03:09
+ */
 public final class Const {
 	
     /**
