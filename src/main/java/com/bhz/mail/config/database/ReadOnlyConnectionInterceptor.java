@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 /****
  * 
  * <p>Title:ReadOnlyConnectionInterceptor</p>
- * <p>Description: 查询数据库切换</p>
+ * <p>Description: 切换查询数据库</p>
  * <p>Company: </p>
  * @author MrWang
  * @date 2018年3月15日 下午10:59:58
