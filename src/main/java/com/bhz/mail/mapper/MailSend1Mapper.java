@@ -12,8 +12,18 @@ import com.bhz.mail.entity.MailSend;
  * @author MrWang
  * @date 2018年3月18日 上午12:27:27
  */
-public interface MailSend1Mapper extends BaseMapper<MailSend>  {
-    int deleteByPrimaryKey(String sendId);
-    MailSend selectByPrimaryKey(String sendId);
-	List<MailSend> queryDraftList();
+public interface MailSend1Mapper  {
+	   int deleteByPrimaryKey(String sendId);
+
+	    int insert(MailSend record);
+
+	    int insertSelective(MailSend record);
+
+	    MailSend selectByPrimaryKey(String sendId);
+
+	    int updateByPrimaryKeySelective(MailSend record);
+
+	    int updateByPrimaryKey(MailSend record);
+
+		List<MailSend> queryDraftList();
 }

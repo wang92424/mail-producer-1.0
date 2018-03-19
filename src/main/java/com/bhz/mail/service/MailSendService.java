@@ -58,16 +58,18 @@ public class MailSendService {
 			size = opsForList.size(RedisPriorityQueue.FAST_QUEUE.getCode());
 			
 		}
+		
+		mailSend.setSendCount(mailSend.getSendCount()+1);
+		
 		if(ret==size) {
 			mailSend.setSendStatus(MailStatus.SEND_IN.getCode());
-			if(mailSend.getSendId().hashCode()%2 == 0){
-				mailSend2Mapper.updateByPrimaryKey(mailSend);
-			} else {
-				mailSend1Mapper.updateByPrimaryKey(mailSend);
-			}
+			
 			LOGGER.info("----------【进入队列成功，ID: {}】----------", mailSend.getSendId());
+		} 
+		if(mailSend.getSendId().hashCode()%2 == 0){
+			mailSend2Mapper.updateByPrimaryKey(mailSend);
 		} else {
-			LOGGER.error("----------【进入队列失败，等待重新投递, ID: {}】----------", mailSend.getSendId());
+			mailSend1Mapper.updateByPrimaryKey(mailSend);
 		}
 	}
 	
@@ -79,5 +81,25 @@ public class MailSendService {
 		
 		return list;
 	}
+	
+	
+//	@Bean
+//	public LettuceConnectionFactory redisConnectionFactory() {
+//		LettuceConnectionFactory jedisConnectionFactory = new LettuceConnectionFactory();
+//        // host地址
+//        jedisConnectionFactory.setHostName("192.168.190.20");
+//        // 端口号
+//        jedisConnectionFactory.setPort(7001);
+//        jedisConnectionFactory.afterPropertiesSet();
+////	    Cluster clusterProperties = redisProperties.getCluster();
+////	    RedisClusterConfiguration config = new RedisClusterConfiguration(
+////	            clusterProperties.getNodes());
+////
+////	    if (clusterProperties.getMaxRedirects() != null) {
+////	        config.setMaxRedirects(clusterProperties.getMaxRedirects());
+////	    }
+//
+//	    return jedisConnectionFactory;
+//	}
 	
 }

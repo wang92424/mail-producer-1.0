@@ -1,10 +1,5 @@
 package com.bhz.mail;
 
-import java.sql.Connection;
-
-import javax.annotation.Resource;
-import javax.sql.DataSource;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +37,10 @@ public class ApplicationTests {
 	
 	@Autowired
 	private RedisTemplate<String, String> redisTemplate;
-	
+//	@Autowired
+//	private RedisProperties redisProperties;
+//	@Autowired
+//	MailSendService mailSendService;
 	@Test
 	public void test3() throws Exception {
 		
@@ -54,5 +52,22 @@ public class ApplicationTests {
 		redisTemplate.delete("name");
 		
 	}
+//	@Test
+//	public void test4() {
+//		JedisConnectionFactory  lf = new JedisConnectionFactory ();
+//        // host地址
+//		lf.setHostName("192.168.190.20");
+//        // 端口号
+//		lf.setPort(7001);
+//		lf.afterPropertiesSet();
+//		redisTemplate.setConnectionFactory(lf);
+//		String script = "redis.call('set',KEY[1],ARGS[1]);";
+//		RedisScript rs = new DefaultRedisScript<>(script, String.class);
+//		ScriptExecutor se = new DefaultScriptExecutor(redisTemplate);
+//		List<String> keys = new ArrayList<>();
+//		keys.add("name");
+//		String args = "1";
+//		se.execute(rs, keys, args);
+//	}
 
 }
